@@ -274,11 +274,15 @@ body {
 .fun-facts-box {
   border: 1px dashed rgba(117, 141, 185, 0.6);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(227, 238, 255, 0.95));
+  font-weight: 700;
+  font-size: 1.03rem;
+  letter-spacing: 0.2px;
 }
 
 .fun-facts-box h3 {
   margin-top: 0;
   color: #5e4b8b;
+  font-weight: 700;
 }
 
 .fun-facts-box a {
