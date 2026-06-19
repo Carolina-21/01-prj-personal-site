@@ -3,59 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Site</title>
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header with site title and navigation -->
+  <!-- Page header with navigation links -->
   <header class="site-header">
-    <h1>My Personal Website</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container header-inner">
+      <h1>My Portfolio</h1>
+      <nav class="main-nav">
+        <a href="#hero">Home</a>
+        <a href="#about">Bio</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero section with profile image and welcome message -->
-  <section class="hero">
-    <img src="img/me.png" alt="Photo of me" class="profile-image">
-    <div>
-      <h2>Hi, I’m [Your Name]</h2>
-      <p>Welcome to my personal website. I enjoy building simple web pages, learning new skills, and sharing my projects.</p>
+  <!-- Hero section introduces the site and includes a profile image -->
+  <section id="hero" class="hero">
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">Hello, I’m</p>
+        <h2>Jane Doe</h2>
+        <p class="hero-text">I’m a web development student building clean websites with HTML and CSS. This page will showcase the projects I create in my college course.</p>
+        <a href="#projects" class="button">See My Work</a>
+      </div>
+      <img src="img/me.png" alt="Profile photo" class="hero-image">
     </div>
   </section>
 
-  <!-- About section with a short introduction -->
+  <!-- About / bio section with a short introduction -->
   <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am learning HTML and CSS and working on my first portfolio site. I like creating clean, easy-to-read pages and practicing good design habits.</p>
-  </section>
-
-  <!-- Projects section with example cards -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-list">
-      <article class="project-card">
-        <h3>Project One</h3>
-        <p>A simple website that shows my favorite hobbies and future goals.</p>
-      </article>
-      <article class="project-card">
-        <h3>Project Two</h3>
-        <p>A practice project where I learned how to use images, links, and sections in HTML.</p>
-      </article>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am learning web development and creating my first portfolio to show the skills I practice in class. I enjoy writing simple HTML, styling with CSS, and making clear pages that are easy to read.</p>
     </div>
   </section>
 
-  <!-- Contact section with a short message -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>If you want to connect, send me an email or find me on social media.</p>
+  <!-- Skills section with a list of strengths -->
+  <section id="skills" class="section section-light">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul class="skill-list">
+        <li>HTML structure and semantic tags</li>
+        <li>CSS styling and layout</li>
+        <li>Responsive design for smaller screens</li>
+        <li>Project planning and sharing ideas</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects section with simple project cards -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <p class="section-description">These are the kinds of projects I will build for class and portfolio practice.</p>
+      <div class="project-list">
+        <article class="project-card">
+          <h3>Portfolio Landing Page</h3>
+          <p>A clean, easy-to-read homepage that introduces who I am and what I build.</p>
+        </article>
+        <article class="project-card">
+          <h3>Course Project</h3>
+          <p>A class assignment that uses HTML sections, images, and links to share information.</p>
+        </article>
+        <article class="project-card">
+          <h3>Contact Page</h3>
+          <p>A simple contact section with a form or message area so visitors can reach me.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section with a short call to action -->
+  <section id="contact" class="section section-dark">
+    <div class="container contact-inner">
+      <div>
+        <h2>Contact</h2>
+        <p>If you want to connect, please send an email or ask your instructor how to share the link to this portfolio.</p>
+      </div>
+      <a href="mailto:yourname@example.com" class="button button-secondary">Email Me</a>
+    </div>
   </section>
 
   <!-- Footer with copyright note -->
   <footer class="site-footer">
-    <p>© 2026 My Personal Website</p>
+    <div class="container">
+      <p>© 2026 Jane Doe</p>
+    </div>
   </footer>
 </body>
 </html>
