@@ -49,10 +49,32 @@ body {
 .main-nav a {
   color: #64527b;
   text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .main-nav a:hover {
   color: #8c6bb2;
+  background-color: rgba(156, 119, 185, 0.12);
+}
+
+.skill-list li {
+  background-color: #f9eff8;
+  border: 1px solid #e5d3eb;
+  border-radius: 16px;
+  padding: 16px;
+  color: #5f4b6d;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-icon {
+  color: #9d77b9;
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
 }
 
 .hero {
