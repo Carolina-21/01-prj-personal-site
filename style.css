@@ -149,9 +149,26 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #dbeefa 0%, #f5e6fb 50%, #faedf8 100%);
+  position: relative;
+  background-image: linear-gradient(135deg, rgba(245,230,255,0.88), rgba(215,245,250,0.88)), url('img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
   color: #2f2d41;
-  padding: 80px 0;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, rgba(118,200,215,0.28), rgba(159,124,193,0.14));
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-inner {
@@ -159,6 +176,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   gap: 32px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text {
@@ -225,6 +244,20 @@ body {
 
 .section {
   padding: 60px 0;
+  position: relative;
+  overflow: visible;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  left: -10%;
+  top: -30px;
+  width: 50%;
+  height: 180px;
+  background: radial-gradient(circle at 10% 50%, rgba(147,125,196,0.06), transparent 35%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .section-light {
@@ -358,8 +391,10 @@ body {
 }
 
 .site-footer {
-  background-color: #f3edfc;
-  padding: 24px 0;
+  background-image: linear-gradient(rgba(243,237,252,0.95), rgba(243,237,252,0.95)), url('photosAndrea/dinnertrainfoto.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 28px 0;
 }
 
 .site-footer p {
