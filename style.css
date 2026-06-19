@@ -173,11 +173,31 @@ body {
 .info-card,
 .education-card,
 .experience-card,
-.award-card {
+.award-card,
+.fun-facts-box {
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 22px;
   padding: 24px;
   box-shadow: 0 16px 35px rgba(96, 84, 143, 0.08);
+}
+
+.fun-facts-box {
+  border: 1px dashed rgba(117, 141, 185, 0.6);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(227, 238, 255, 0.95));
+}
+
+.fun-facts-box h3 {
+  margin-top: 0;
+  color: #5e4b8b;
+}
+
+.fun-facts-box a {
+  color: #5a8fb8;
+  text-decoration: underline;
+}
+
+.fun-facts-box a:hover {
+  color: #3d6c8e;
 }
 
 .education-list,
