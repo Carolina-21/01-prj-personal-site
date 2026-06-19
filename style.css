@@ -1,22 +1,22 @@
-/* Modern chic pastel styling for a feminine portfolio */
+/* Pastel lilac and aqua styling for Andrea's portfolio */
 
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
-  background-color: #f7f2f8;
-  color: #3f3d56;
+  background-color: #e9f4fb;
+  color: #2f2d41;
 }
 
 .container {
-  width: 90%;
-  max-width: 980px;
+  width: 92%;
+  max-width: 1040px;
   margin: 0 auto;
 }
 
 .site-header {
-  background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 10px 30px rgba(115, 103, 145, 0.12);
+  background-color: rgba(245, 242, 255, 0.95);
+  border-bottom: 1px solid rgba(163, 147, 207, 0.35);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -33,21 +33,20 @@ body {
 
 .site-header h1 {
   margin: 0;
-  font-size: 26px;
-  font-family: 'Brush Script MT', cursive;
-  color: #7c4d9a;
+  font-size: 28px;
+  color: #5e4b8b;
 }
 
 .main-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 14px;
+  gap: 12px;
   font-size: 14px;
 }
 
 .main-nav a {
-  color: #64527b;
+  color: #5e4b8b;
   text-decoration: none;
   padding: 10px 14px;
   border-radius: 999px;
@@ -55,32 +54,14 @@ body {
 }
 
 .main-nav a:hover {
-  color: #8c6bb2;
-  background-color: rgba(156, 119, 185, 0.12);
-}
-
-.skill-list li {
-  background-color: #f9eff8;
-  border: 1px solid #e5d3eb;
-  border-radius: 16px;
-  padding: 16px;
-  color: #5f4b6d;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.skill-icon {
-  color: #9d77b9;
-  font-size: 20px;
-  width: 24px;
-  text-align: center;
+  color: #2f2d41;
+  background-color: rgba(164, 190, 225, 0.35);
 }
 
 .hero {
-  background: linear-gradient(135deg, #f8d3e0 0%, #fbe8f4 50%, #f5f0ff 100%);
-  color: #4a3c5a;
-  padding: 70px 0;
+  background: linear-gradient(135deg, #dbeefa 0%, #f5e6fb 50%, #faedf8 100%);
+  color: #2f2d41;
+  padding: 80px 0;
 }
 
 .hero-inner {
@@ -91,7 +72,14 @@ body {
 }
 
 .hero-text {
-  max-width: 520px;
+  max-width: 560px;
+}
+
+.hero-links {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .eyebrow {
@@ -99,13 +87,13 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  color: #9a7aa3;
+  color: #7a639c;
 }
 
 .hero h2 {
   margin: 0 0 18px;
-  font-size: 40px;
-  font-family: 'Brush Script MT', cursive;
+  font-size: 42px;
+  color: #4b3d6f;
 }
 
 .hero p {
@@ -114,25 +102,35 @@ body {
 }
 
 .hero-image {
-  width: 180px;
+  width: 200px;
   border-radius: 28px;
-  border: 5px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 0 20px 35px rgba(125, 95, 145, 0.16);
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 22px 45px rgba(110, 89, 144, 0.14);
 }
 
-.button {
+.button,
+.button-secondary {
   display: inline-block;
-  background-color: #9d77b9;
   color: white;
   text-decoration: none;
   padding: 14px 26px;
   border-radius: 999px;
   margin-top: 24px;
-  transition: background-color 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.button:hover {
-  background-color: #7d5f97;
+.button {
+  background-color: #75c5d4;
+}
+
+.button-secondary {
+  background-color: #9f7cc1;
+}
+
+.button:hover,
+.button-secondary:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
 }
 
 .section {
@@ -144,20 +142,71 @@ body {
 }
 
 .section-dark {
-  background-color: #a98bbf;
+  background: linear-gradient(135deg, #9b8cc4 0%, #8dcad8 100%);
   color: #ffffff;
 }
 
 .section h2 {
   margin-top: 0;
-  font-size: 32px;
-  color: #63486a;
+  font-size: 34px;
+  color: #5e4b8b;
 }
 
 .section-description {
-  max-width: 650px;
+  max-width: 680px;
   margin: 10px 0 0;
-  color: #6b5f74;
+  color: #5b4f71;
+}
+
+.info-grid,
+.education-list,
+.experience-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.info-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.info-card,
+.education-card,
+.experience-card,
+.award-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 16px 35px rgba(96, 84, 143, 0.08);
+}
+
+.education-list,
+.experience-list {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.secondary-list {
+  margin-top: 24px;
+}
+
+.secondary-list ul,
+.cert-list,
+.award-card ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.secondary-list li,
+.cert-list li,
+.award-card li {
+  margin-bottom: 10px;
+  color: #5f5477;
+}
+
+.cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
 }
 
 .skill-list {
@@ -169,37 +218,21 @@ body {
 }
 
 .skill-list li {
-  background-color: #f9eff8;
-  border: 1px solid #e5d3eb;
+  background-color: #f5f0ff;
+  border: 1px solid #dacdf0;
   border-radius: 16px;
   padding: 16px;
-  color: #5f4b6d;
+  color: #4f4172;
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
-.project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-  margin-top: 28px;
-}
-
-.project-card {
-  background-color: #fff;
-  border-radius: 24px;
-  padding: 26px;
-  box-shadow: 0 16px 40px rgba(128, 103, 142, 0.12);
-  min-width: 0;
-}
-
-.project-card h3 {
-  margin-top: 0;
+.skill-icon {
+  color: #76c8d7;
   font-size: 20px;
-  color: #684f7d;
-}
-
-.project-card p {
-  margin: 8px 0 0;
-  color: #6f5d7a;
+  width: 24px;
+  text-align: center;
 }
 
 .contact-inner {
@@ -210,33 +243,26 @@ body {
   gap: 24px;
 }
 
-.button-secondary {
-  background-color: #f7eef6;
-  color: #5a3f61;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.button-secondary:hover {
-  background-color: #f0e4f1;
-}
-
 .site-footer {
-  background-color: #f3ebf5;
+  background-color: #f3edfc;
   padding: 24px 0;
-  text-align: center;
-  color: #5a4c66;
 }
 
-@media (max-width: 720px) {
-  .header-inner,
+.site-footer p {
+  margin: 0;
+  text-align: center;
+  color: #6a5c88;
+}
+
+@media (max-width: 760px) {
   .hero-inner,
   .contact-inner {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero h2 {
-    font-size: 34px;
+  .hero-image {
+    margin: 0 auto;
   }
 
   .main-nav {
